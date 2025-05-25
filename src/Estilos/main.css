@@ -1,0 +1,197 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*background-image: url("../assets/blanco.jpg");*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Quitar flechas en inputs tipo number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+}
+
+/* Contenedor principal */
+.vista-productos,
+.carrito-pago,
+.vista-inicio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Títulos */
+h2, h3, h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Botones */
+button {
+  padding: 8px 12px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+/* Inputs y selects */
+input, select {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*Opciones de entrega*/
+.opciones-entrega {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+
+/* Filtros */
+.filtros {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(209, 24, 24, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+/* Lista de productos con flex-wrap */
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjetas de productos */
+.producto-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Detalle del producto */
+.detalle-producto {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+  
+}
+
+.detalle-vacio {
+  text-align: center;
+  color: #999;
+  margin-top: 40px;
+}
+
+/* Carrito */
+.carrito-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.carrito-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.carrito-container th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.resumen-compra {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Formulario de tarjeta */
+.tarjeta-pago {
+  background-color: #fefefe;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Botones de navegación */
+.barra-navegacion,
+.botones-navegacion {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Errores y mensajes */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lista-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-card {
+    width: 90%;
+  }
+
+  .filtros, .detalle-producto, .tarjeta-pago {
+    width: 100%;
+  }
+  
+}

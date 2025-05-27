@@ -23,7 +23,7 @@ const Filtros = ({ onFiltrar, onLimpiar }) => {
         <option value="">Todas</option>
         <option value="Nike">Nike</option>
         <option value="Adidas">Adidas</option>
-        <option value="Clarks">Brahma</option>
+        <option value="Brahma">Brahma</option>
         <option value="Reebok">Reebok</option>
         <option value="Timberland">Timberland</option>
       </select>
